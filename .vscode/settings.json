@@ -1,0 +1,22 @@
+{
+    //CMake扩展配置
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.installPrefix": "${workspaceFolder}/bin",
+    "cmake.configureOnOpen": true,
+    "cmake.configureSettings":
+    {
+        "CMAKE_EXPORT_COMPILE_COMMANDS": true
+    },
+
+    //CMake Tools扩展和C/C++扩展的桥梁 
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+
+    //C/C++扩展配置
+    "files.associations": 
+    {
+        "*.h": "cpp",
+        "*.hpp": "cpp"
+    },
+    "C_Cpp.intelliSenseEngine": "default"
+}

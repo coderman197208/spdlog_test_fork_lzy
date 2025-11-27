@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/Code/vscode_Projects/spdlog_test/build/cmake_install.cmake",
+		"E:/Code/vscode_Projects/spdlog_test/build/subproject1/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

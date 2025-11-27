@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+//项目 1 配置：
+        {
+            "name": "Debug subProject1",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/subproject1.exe",  // 添加 .exe 扩展名
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/subproject1",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",  // 明确指定 GDB 路径
+            "setupCommands": [
+                //第一个命令：启用 GDB 的漂亮打印（pretty-printing）
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                //第二个命令：设置反汇编风格为 Intel
+                {
+                    "description": "Set disassembly flavor to Intel",
+                    "text": "set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "build-all",
+            //日志控制————减少调试时的日志噪音，让输出更清晰
+            "logging": {
+                "moduleLoad": false,  // 不显示DLL/so加载日志
+                "programOutput": true, // 显示程序输出
+                "engineLogging": false  // 不显示调试引擎内部日志
+            }
+        }
+    ]
+}

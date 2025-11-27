@@ -1,0 +1,57 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        //1. build-all 任务 - 构建所有目标
+        {
+            "label": "build-all",
+            "type": "shell",
+            "command": "cmake",
+            "args":
+             [
+                "--build","${workspaceFolder}/build",
+                "--config", "Debug"
+            ],
+            "group":
+            {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": 
+            [
+                "$gcc"
+            ],
+            "detail": "构建整个项目（Debug模式）"
+        },
+        
+        //2. configure-cmake 任务 - 初始 CMake 配置
+        {
+            "label": "configure-cmake",
+            "type": "shell",
+            "command": "cmake",
+            "args":
+             [
+                "-B","${workspaceFolder}/build",
+                "-S","${workspaceFolder}",
+                "-G","MinGW Makefiles",
+                "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+            "group": "build",
+            "detail": "配置CMake为Debug模式"
+        },
+        
+        //3.clean-build 任务 - 清理并重新构建
+        {
+            "label": "clean-build",
+            "type": "shell",
+            "command": "cmake",
+            "args": 
+            [
+                "--build", "${workspaceFolder}/build",
+                "--config","Debug",
+                "--clean-first"
+            ],
+            "detail": "清理并重新构建"
+        }
+        
+    ]
+}

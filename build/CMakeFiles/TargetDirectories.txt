@@ -1,0 +1,5 @@
+E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/edit_cache.dir
+E:/Code/vscode_Projects/spdlog_test/build/CMakeFiles/rebuild_cache.dir
+E:/Code/vscode_Projects/spdlog_test/build/subproject1/CMakeFiles/subproject1.dir
+E:/Code/vscode_Projects/spdlog_test/build/subproject1/CMakeFiles/edit_cache.dir
+E:/Code/vscode_Projects/spdlog_test/build/subproject1/CMakeFiles/rebuild_cache.dir
