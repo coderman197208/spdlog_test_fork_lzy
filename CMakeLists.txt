@@ -22,6 +22,9 @@ set(COMMON_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/common_include)
 
 # 添加所有子项目
 add_subdirectory(subproject1)
+add_subdirectory(subproject2)
+add_subdirectory(subproject3)
+
 
 # ===== spdlog 路径配置（可在 configure 时覆盖） =====
 set(SPDLOG_INCLUDE_DIR "${CMAKE_SOURCE_DIR}/common_include" CACHE PATH "spdlog include directory")

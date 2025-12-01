@@ -128,6 +128,32 @@ subproject1/fast:
 	$(MAKE) $(MAKESILENT) -f subproject1\CMakeFiles\subproject1.dir\build.make subproject1/CMakeFiles/subproject1.dir/build
 .PHONY : subproject1/fast
 
+#=============================================================================
+# Target rules for targets named subproject2
+
+# Build rule for target.
+subproject2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 subproject2
+.PHONY : subproject2
+
+# fast build rule for target.
+subproject2/fast:
+	$(MAKE) $(MAKESILENT) -f subproject2\CMakeFiles\subproject2.dir\build.make subproject2/CMakeFiles/subproject2.dir/build
+.PHONY : subproject2/fast
+
+#=============================================================================
+# Target rules for targets named subproject3
+
+# Build rule for target.
+subproject3: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 subproject3
+.PHONY : subproject3
+
+# fast build rule for target.
+subproject3/fast:
+	$(MAKE) $(MAKESILENT) -f subproject3\CMakeFiles\subproject3.dir\build.make subproject3/CMakeFiles/subproject3.dir/build
+.PHONY : subproject3/fast
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -137,6 +163,8 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... subproject1
+	@echo ... subproject2
+	@echo ... subproject3
 .PHONY : help
 
 

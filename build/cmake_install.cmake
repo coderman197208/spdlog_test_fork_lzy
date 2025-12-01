@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/spdlog_test")
+  set(CMAKE_INSTALL_PREFIX "e:/Code/vscode_Projects/spdlog_test/bin")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,6 +40,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("E:/Code/vscode_Projects/spdlog_test/build/subproject1/cmake_install.cmake")
+  include("E:/Code/vscode_Projects/spdlog_test/build/subproject2/cmake_install.cmake")
+  include("E:/Code/vscode_Projects/spdlog_test/build/subproject3/cmake_install.cmake")
 
 endif()
 

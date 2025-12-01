@@ -95,6 +95,7 @@ subproject1_EXTERNAL_OBJECTS =
 
 E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: subproject1/CMakeFiles/subproject1.dir/src/1_basic_include.cpp.obj
 E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: subproject1/CMakeFiles/subproject1.dir/build.make
+E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: E:/Code/vscode_Projects/spdlog_test/lib/libspdlog.a
 E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: subproject1/CMakeFiles/subproject1.dir/linkLibs.rsp
 E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: subproject1/CMakeFiles/subproject1.dir/objects1.rsp
 E:/Code/vscode_Projects/spdlog_test/bin/subproject1.exe: subproject1/CMakeFiles/subproject1.dir/link.txt
